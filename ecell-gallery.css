@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+.image-gallery {
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.gallery {
+    position: relative;
+    column-count: 3;
+    margin: 4%;
+    gap: 1%;
+}
+
+.imgage {
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .gallery {
+        column-count: 1;
+    }
+}
