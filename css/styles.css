@@ -483,14 +483,14 @@ html{
 .about_img img{
     width: 80%;
     height: 80%;
-    animation: slideLeft 1s;
+/*     animation: slideLeft 1s; */
 }
 .about_context{
     width: 50%;
     /* border: 2px solid red; */
     padding: 10px;
     padding-top: 20px;
-    animation: slideRight 1s;
+/*     animation: slideRight 1s; */
 }
 .about_header{
     font-size: 70px;
@@ -530,12 +530,12 @@ html{
         align-items: center;
         justify-content: center;
     }
-    .about_context{
+/*     .about_context{
         animation: slideButtom 1s;
     }
     .about_img img{
         animation: slideButtom 1s;
-    }
+    } */
 }
 /* Sliding Animation */
 /* For Smaller devices, animations are set from buttom to right;
