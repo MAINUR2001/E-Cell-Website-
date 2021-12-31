@@ -1220,122 +1220,39 @@ opacity: 0;
 
 
 /* FOOTER CSS RAJAK  */
-footer {
-    margin-top: 10rem;
-    font-family: 'Open Sans', sans-serif;
-    clear: both;
-    background-color: #211b25;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-}
+/* footer top start here */
 
 footer .footer-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     padding: 2rem 2rem;
 }
 
-.footer-col-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 30vw;
-    margin-top: 2rem;
-}
-
-.items {
-    flex-basis: auto;
-    height: 20rem;
-    margin: 0.5rem;
-}
-
-footer .footer-col-2 li {
+footer li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     list-style: none;
-    font-size: .8rem;
+    font-size: 0.8rem;
     margin-top: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    line-height: 1rem;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.footer-col-2 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 25vw;
-    padding: 0 2rem;
-}
-
-footer .footer-col-2 ul li {
-    margin: 0.5rem 0;
-}
-
-.footer-col-2 li p {
-    display: inline;
-}
-
-p {
-    margin: 0;
-    line-height: 1.5;
-}
-
-.footer-col-3 {
-    width: 25vw;
-    padding: 0 2.5rem;
-}
-
-.footer-col-3 input[type=email] {
-    background-color: #000;
-    color: #fff;
-    height: 2.6rem;
-    width: 16vw;
-    padding: 0 1rem;
-    border-radius: 0.3rem;
-    border: none;
-    outline: none;
-}
-
-.footer-col-3 button {
-    background: #cfbd17;
-    height: 2.2rem;
-    width: 2.2rem;
-    transform: scale(1.25);
-    font-weight: 100;
-    border-radius: 0.4rem;
-    border: none;
-    outline: none;
+footer li span {
+    margin-left: 1rem;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
     cursor: pointer;
-    position: absolute;
-    margin: 0.2rem;
-}
-
-.footer-bottom {
-    background-color: #251a1e;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-}
-
-.footer-bottom button {
-    background-color: #251a1e;
-    color: #fff;
-    position: absolute;
-    height: 2rem;
-    width: 2rem;
-    right: 0.6rem;
-    border-radius: 0.8rem;
-    cursor: pointer;
-    outline: none;
-    border: none;
 }
 
 footer a {
@@ -1349,100 +1266,286 @@ footer h2 {
     margin-bottom: 0.8rem;
 }
 
-.footer-col-1 .items li {
-    list-style: none;
-    font-size: .8rem;
-    margin-top: 1rem;
-    align-items: center;
-    line-height: 0.5rem;
-}
-
-footer .footer-col-2 li {
-    list-style: none;
-    font-size: .8rem;
-    margin-top: 1rem;
-    align-items: center;
-    line-height: 0.2rem;
-}
-
-footer li span {
-    margin-left: 1rem;
-    justify-content: left;
-    cursor: pointer;
-}
-
 footer hr {
     border-color: #6d7c7c;
     border-style: none;
     border-top-style: dotted;
-    border-width: 0.4rem;
+    border-width: 4px;
     width: 3rem;
     margin: 1rem auto 1.5rem;
 }
 
-.footer-col-1 span {
-    padding-left: 2px;
+
+/* footer colum1 1 start here */
+
+.fcol-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 30vw;
+    margin-top: 2rem;
 }
 
-.socio-icon {
-    font-size: 3rem;
-    line-height: 6rem;
-    color: white;
+.fcol-1 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: left;
+    -ms-flex-align: left;
+    align-items: left;
 }
 
-.socio-icon:hover {
-    color: #000;
-    transition: 0.5s;
+.fcol-1 img {
+    width: 50%;
+}
+
+.fcol-1 div {
+    width: 12rem !important;
+    text-align: center;
+    margin-right: 1.5rem;
+}
+
+
+/* footer-col-1 end here */
+
+
+/* footer col-2 start here */
+
+.fcol-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 25vw;
+    padding: 0 2rem;
+}
+
+.fcol-2 a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 20px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.fcol-2 a .icons {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fcol-2 li {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 10px auto;
+    grid-template-columns: 10px auto;
+    grid-gap: 20px;
+    cursor: pointer;
+}
+
+.fcol-2 li p {
+    display: inline;
+}
+
+.fcol-2 li p span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.fcol-2 a:after {
+    content: "";
+    display: block;
+    height: 90%;
+    top: -110%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.fcol-2 a:hover:after {
+    top: 5%;
+    -webkit-transition: all 0.3s linear 0.1s;
+    transition: all 0.3s linear 0.1s;
+}
+
+.fcol-2 a:hover .icons {
+    position: relative;
+    color: #211B25;
+    z-index: 3;
+}
+
+.fcol-2 a:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+}
+
+
+/* footer col-3 start here */
+
+.fcol-3 {
+    width: 25vw;
+    padding: 0 2.5rem;
+}
+
+.fcol-3 input[type=email] {
+    background-color: #000;
+    color: #fff;
+    height: 2.6rem;
+    width: 16vw;
+    padding: 0 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+}
+
+.fcol-3 button {
+    background: #cfbd17;
+    height: 2.2rem;
+    width: 2.2rem;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    font-weight: 100;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    margin: 2px;
+}
+
+.fcol-3 p {
+    margin: 1rem 0;
+}
+
+
+/* footer col-3 end here */
+
+
+/* footer bottom start here */
+
+.footer-bottom {
+    background-color: #251A1E;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.footer-bottom p {
+    display: inline;
+    font-size: 0.7rem;
+}
+
+.footer-bottom button {
+    background-color: #251A1E;
+    color: #fff;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 @media (max-width: 968px) {
-    footer .footer-top {
-        display: flex;
-        flex-direction: column;
+    .footer-top {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 2rem 3rem !important;
     }
-    .footer-top .footer-col-1 {
+    .footer-top .fcol-1 {
         width: 100vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
-        justify-content: space-even
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
     }
-    .footer-top .footer-col-1 .items ul li span {
-        margin: auto;
-        width: 50%;
-    }
-    .footer-top .footer-col-2 {
+    .footer-top .fcol-2 {
         margin-top: 2.5rem;
         width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    .footer-top .footer-col-2 ul li {
-        display: inline;
-        margin: 0 0.5rem;
+    .footer-top .fcol-2 ul {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
     }
-    .footer-top .footer-col-2 ul p {
+    .footer-top .fcol-2 ul li:nth-child(2) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .footer-top .fcol-2 ul li {
+        grid-gap: 0;
+    }
+    .footer-top .fcol-2 ul p {
         display: none;
     }
-    .footer-top .footer-col-3 {
+    .footer-top .fcol-3 {
         margin-top: 2.5rem;
         width: 100vw;
         text-align: center;
-        align-items: center;
-        position: relative;
     }
-    .footer-top .footer-col-3 p {
+    .footer-top .fcol-3 input[type="email"] {
+        width: 75vw;
+    }
+    .footer-top .fcol-3 button {
         margin-left: -2rem;
     }
-    .footer-top .footer-col-3 input[type=email] {
-        margin: auto;
-        width: 70%;
-    }
-    .footer-top .footer-col-3 .btn {
-        flex-direction: row;
-        align-items: stretch;
-        position: absolute;
-    }
 }
-/* FOOTER CSS END */
+
+
+/* footer end here */
