@@ -13,20 +13,25 @@ hamburger.addEventListener("click", mobileMenu);
 function opaquenavbar(){
     var x=document.documentElement.scrollTop;
     console.log(x+"px");
-    if(x>105){
+    const y=screen.width;
+    console.log(y);
+    if(y>872){
 
-        // navbar.style.backgroundColor="rgba(240,226,226,.4)";
-        // // navbar.style.opacity="0.5";
-        // navbar.style.zIndex="10";
-        navbar.classList.add("opaque");
+        if(x>105){
+    
+            // navbar.style.backgroundColor="rgba(240,226,226,.4)";
+            // // navbar.style.opacity="0.5";
+            // navbar.style.zIndex="10";
+            navbar.classList.add("opaque");
+        }
+        if(x<105){
+            // navbar.style.backgroundColor="none";
+            navbar.classList.remove("opaque");
+            // navbar.style.opacity="0.5"; 
+            // navbar.style.zIndex="10";
+        }
     }
-    if(x<105){
-        // navbar.style.backgroundColor="none";
-        navbar.classList.remove("opaque");
-        // navbar.style.opacity="0.5"; 
-        // navbar.style.zIndex="10";
-    }
-    // console.log("scrolled");
+     onsole.log("scrolled");
 }
 
 function mobileMenu() {
