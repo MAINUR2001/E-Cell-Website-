@@ -7,6 +7,7 @@
 body {
   /* background-image:url(https://github.com/E-cell-Website-NITS/E-Cell-Website-/blob/main/images/home_page_image.png?raw=true); */
   width: 100vw;
+  overflow-x: hidden;
 }
 *{
   margin:0;
@@ -215,6 +216,7 @@ top: 0%;
   color: white;
   font-weight: 600;
   font-family: sans-serif;
+  transition: 100;
   
 }
 .top{
@@ -222,18 +224,19 @@ top: 0%;
   padding-top: 20%;
 }
 .Banner_gallery {
-  margin: 0 0 0 70px;
-  padding-top:10;
-  padding-top: 14px ;
+  margin: 0 0 0 7rem;
+  padding-top:1rem;
+  padding-top: 1.4rem ;
   font-size: 14rem;
   color: white;
   font-weight: 600;
   font-family: sans-serif;
+  transition: 100;
 }
 .Banner_navbar {
   display: flex;
   box-shadow: 0.3rem 0px 0.2rem 0.2rem grey;
-  width: 50%;
+  width: 61%;
   margin: -3.5rem auto;
   height: 7rem;
   justify-content: space-evenly;
@@ -281,7 +284,7 @@ top: 0%;
     background-position: 100%;
   }
   .Banner_navbar {
-    width: 70%;
+    width: 77%;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -347,7 +350,7 @@ top: 0%;
   }
   @media only screen and (max-width: 500px) {
     .Banner_navbar {
-      width: 97%;
+      width: 96%;
     }
     .Banner_navbar span {
       padding: 0.8rem 1.0rem;
@@ -359,12 +362,12 @@ top: 0%;
       
     }
     .Banner_photo {
-      padding-top: 35rem;
-      margin-left: 5.5rem;
+      padding-top: 37rem;
+      margin-left: 4.5rem;
     }
     .Banner_gallery {
       font-size: 7.5rem;
-      margin-left: 5.5rem;
+      margin-left: 3.5rem;
 
     }
   }
