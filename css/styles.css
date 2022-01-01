@@ -81,6 +81,7 @@ body{
 } */
 
 .bar {
+    
     display: block;
     width: 25px;
     height: 4px;
@@ -90,16 +91,25 @@ body{
     background-color:  rgb(216,219,221);
     
 }
+
 @media only screen and (max-width: 872px) {
+    .blur{
+        height:500vh;
+        width:100vw;
+        background-color: #000;
+        opacity: 0.8;
+    }
     .navbar ul {
         position: fixed;
         left: -100%;
-        top: 7rem;
+        top: 8rem;
         
         flex-direction: column;
         /* background-color:  rgb(216,219,221); */
         width: 100%;
         /* border: solid black; */
+        align-items: center;
+        justify-content: center;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
@@ -119,6 +129,7 @@ body{
         font-size: 25px;
         font-weight:550px;
         font-style:normal;
+        color:white;
         /* font-family:sans-serif; */
     }
 
@@ -129,11 +140,11 @@ body{
         flex-direction: row;
         justify-content: space-between;
         cursor: pointer;
-        height:4rem;
+        height:8rem;
         top:3%
     }
     .ham-bar{
-        margin:10px 15px;
+        margin:13px 15px;
     }
     
     .hamburger.active .bar:nth-child(2) {
