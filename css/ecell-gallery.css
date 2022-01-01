@@ -162,32 +162,54 @@ body{
 
 }
 
-  .Banner_start {
+  /* .Banner_start {
     margin: 0.8rem auto;
-    
+    width: 100%;
     background-image: url(../images/Bg_gallerY.jpg);
-    /* background-color: red; */
+    background-color: red;
     height:600px;
     background-repeat: no-repeat;
     
-    /* background-size: auto; */
-    background-position: contain;
+    background-size: auto;
+    background-position: cover;
+  } */
+  .Banner{
+    position: relative;
   }
-  
+  .bg-img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-image:url(../images/Bg_gallerY.jpg) ;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
   .Banner_photo {
-    font-size: 4.4rem;
-    margin: 0 0 0 9rem;
-    padding-top: 32.5rem;
+    font-size: 8rem;
+    margin: 0 0 0 8rem;
+    padding-top: 5.5rem;
     color: white;
     font-weight: 600;
     font-family: sans-serif;
-    font-stretch: ultra-expanded;
+    
   }
   
   .Banner_gallery {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 70px;
     padding-top:10;
-    font-size: 7rem;
+    padding-top: 14px ;
+    font-size: 14rem;
     color: white;
     font-weight: 600;
     font-family: sans-serif;
@@ -197,7 +219,7 @@ body{
     box-shadow: 0.3rem 0px 0.2rem 0.2rem grey;
     width: 50%;
     margin: -3.5rem auto;
-    height: 5rem;
+    height: 7rem;
     justify-content: space-evenly;
     background-color: white;
     align-items: center;
@@ -209,6 +231,7 @@ body{
     padding: 0.8rem 1.7rem;
     color: #615d5d;
     font-weight: 600;
+    font-size: 2rem;
   }
   .Banner_navbar span:hover {
     background-color: #224259;
@@ -219,10 +242,13 @@ body{
   
   @media only screen and (max-width: 1050px) {
     .Banner_photo {
-      font-size: 3.2rem;
+      font-size: 5.2rem;
+      padding-top: 30rem;
+      margin-left: 5.5rem;
     }
     .Banner_gallery {
-      font-size: 5rem;
+      font-size: 7rem;
+      margin-left: 4.8rem;
     }
   }
   @media only screen and (max-width: 650px) {
@@ -256,6 +282,25 @@ body{
       
     }
   }
+  /* @media only screen and (max-width: 1496px){ */
+    /* .Banner_start {
+      width: 80vw;
+      background-position: contain;
+
+    }  */
+    /* .Banner_photo{
+      padding-top: 6.5rem;
+      font-size: 8rem;
+    }
+    .Banner_gallery{
+      font-size: 14rem;
+    }
+    .Banner_navbar{
+      margin: -3.5rem auto;
+      height: 7rem;
+    }
+
+  } */
   
 /* SAKSHI SECTION GALLERY PAGE TOP CSS */
 
