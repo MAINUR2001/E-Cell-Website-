@@ -196,17 +196,17 @@ body{
     bottom: 0;
   }
   .Banner_photo {
-    font-size: 8rem;
     margin: 0 0 0 8rem;
-    padding-top: 5.5rem;
     color: white;
     font-weight: 600;
     font-family: sans-serif;
+    padding-top: 9rem;
+    font-size: 8rem;
     
   }
   
   .Banner_gallery {
-    margin: 0 0 0 70px;
+    margin: 0 0 0 7rem;
     padding-top:10;
     padding-top: 14px ;
     font-size: 14rem;
@@ -240,23 +240,41 @@ body{
     color: white;
   }
   
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 970px) {
     .Banner_photo {
-      font-size: 5.2rem;
-      padding-top: 30rem;
-      margin-left: 5.5rem;
+      font-size: 7rem;
+      padding-top: 18rem;
+      margin-left: 8.5rem;
     }
     .Banner_gallery {
-      font-size: 7rem;
-      margin-left: 4.8rem;
+      font-size: 11rem;
     }
+  }
+  @media only screen and (max-width: 840px) {
+    .Banner_photo {
+      font-size: 6rem;
+      padding-top: 20rem;
+      margin-left: 8.5rem;
+    }
+    .Banner_gallery {
+      font-size: rem;
+    }
+  }
+  @media only screen and (min-width: 1260px) {
+    .Banner_photo {
+      padding-top: 4rem;
+      /* margin-top: -rem; */
+    }
+   
   }
   @media only screen and (max-width: 650px) {
     .Banner_photo {
-      font-size: 2.1rem;
+      font-size: 5rem;
+      padding-top: 27rem;
+      margin-left: 8.5rem;
     }
     .Banner_gallery {
-      font-size: 3.2rem;
+      font-size: 8rem;
     }
     .Banner_start {
       width: 100%;
@@ -268,7 +286,7 @@ body{
       width: 70%;
     }
   }
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 500px) {
     .Banner_navbar {
       width: 97%;
     }
@@ -280,6 +298,41 @@ body{
       
       padding: 0.8rem 1.0rem;
       
+    }
+    .Banner_photo {
+      padding-top: 35rem;
+      margin-left: 5.5rem;
+    }
+    .Banner_gallery {
+      font-size: 7.5rem;
+      margin-left: 5.5rem;
+
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .Banner_navbar {
+      width: 97%;
+    }
+    .Banner_navbar span {
+      padding: 0.8rem 1.0rem;
+
+      font-size: 1.2rem;
+      
+    }
+    .Banner_navbar span:hover {
+      
+      padding: 0.8rem 1.0rem;
+      
+    }
+    .Banner_photo {
+      margin-left: 2.5rem;
+     
+      padding-top: 38rem;
+    }
+    .Banner_gallery {
+      margin-left:2.5rem;
+
+      font-size: 7.5rem;
     }
   }
   /* @media only screen and (max-width: 1496px){ */
