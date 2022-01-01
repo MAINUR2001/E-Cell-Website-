@@ -1,8 +1,12 @@
+// const banner=document.querySelector(".Banner_start");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector("ul");
 const image=document.querySelector(".image");
 const navbar=document.querySelector(".navbar");
 const body=document.body;
+const y=screen.width;
+
+// console.log(banner.style.height);
 const documents=document;
 document.addEventListener("scroll",opaquenavbar);
 body.addEventListener("click",clickfunction);
@@ -37,6 +41,7 @@ function opaquenavbar(){
 function mobileMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    navbar.classList.toggle("blur");
     image.remove();
 }
 const navLink = document.querySelectorAll("li");
@@ -46,5 +51,6 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+    navbar.classList.toggle("blur");
 }
 console.log(navMenu)
