@@ -35,7 +35,7 @@ function opaquenavbar(){
             // navbar.style.zIndex="10";
         }
     }
-     onsole.log("scrolled");
+     console.log("scrolled");
 }
 
 function mobileMenu() {
@@ -54,3 +54,15 @@ function closeMenu() {
     navbar.classList.toggle("blur");
 }
 console.log(navMenu)
+
+// Sakshi tab part 
+
+function openTab(category) {
+    var i;
+    var x = document.getElementsByClassName("image-gallery");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    
+    document.getElementById(category).style.display = "block";
+  }
