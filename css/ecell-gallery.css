@@ -67,8 +67,23 @@ top: 0%;
   /* color: #262ccf; */
   color: black;
 }
+.underline{
+  border-bottom: 2px solid black;
+}
 .navbar li a:hover{
-  color:rgb(253, 253, 253);
+  color:rgb(40, 39, 97);
+  /* border-bottom:1px solid black; */
+  /* background-color: green; */
+}
+/* .navbar li a:visited{
+  color:hotpink;
+} */
+/* .navbar li a:active{
+  color:red;
+  background-color: green;
+} */
+.active{
+  background-color: green;
 }
 
 /* @media only screen and  (max-width: 768px) {
