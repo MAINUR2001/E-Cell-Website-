@@ -841,6 +841,7 @@ Wherease for larger devices, sideways */
     }
     .bottom{
         margin-left: 35%;
+	margin-top: -70%;
     }
 }
 
