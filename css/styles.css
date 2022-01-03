@@ -707,7 +707,7 @@ Wherease for larger devices, sideways */
     top: 25%;
     transform: rotate(90deg);
     margin-top: -3.5rem;
-    margin-left: -0.6rem;
+    margin-left: -0.1rem;
     color: black;
     z-index: 200;
 }
