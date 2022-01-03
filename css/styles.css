@@ -858,6 +858,13 @@ Wherease for larger devices, sideways */
 
 
 /* GALLERY SECTION CSS RITURAJ */
+.gallery-box .heading{
+    font-size: 3.5rem;
+}
+.gallery-box p{
+    font-size: 2.1rem;
+}
+/* Font changed by Hannan */
 .gallery-box {
     padding: 5rem;
     width: 100%;
@@ -1048,6 +1055,7 @@ Wherease for larger devices, sideways */
 .badge_content h3{
     font-size: 4rem;
     color: #000;
+    margin: 3rem;
 }
 
 @media only screen and (max-width:600px){
