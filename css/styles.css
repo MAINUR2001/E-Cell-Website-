@@ -598,25 +598,24 @@ Wherease for larger devices, sideways */
  /* ABOUT SECTION CSS HANAN */
 
 
-
-
-
-
-
  /* TIMELINE SECTION ALOK */
  section{
-    width: 100%;
-    /* height: auto; */
+     padding-top: -10rem;
+    width: 90%;
+    /* border:2px solid black; */
+    height: auto;
+    /* border-width: 100px 200em 0 400rem; */
     display: flex; 
     flex-direction: column; 
     background-color: lightgrey;
     align-items: center;
     padding-bottom: 2%;
-    margin-top: 4rem;
+    border-left: 100%;
+    margin:auto;
 } 
 .section-heading{
     width: auto;
-    padding: 2rem 1rem 1rem;
+    /* padding: 2rem 1rem 1rem; */
     margin: 1rem auto;
     font-weight: 500;
     justify-content: center;
@@ -636,52 +635,59 @@ Wherease for larger devices, sideways */
 .timeline{
     position: relative;
     width: 75%;
+    /* padding-right: 25%; */
+    /* height:30px; */
     /* border: 2px solid black; */
-    margin-top: -4%;
+    margin-top: -1%;
 }
 .timeline-box{
     position: relative;
-    width: 37%;
+    width: 30%;
+    height:300px !important ;
     left: 5%;
     /* margin: 5px; */
     margin: 1%;
     /* min-height: 250px; */
-    min-height: 30vh;
+    /* min-height: 30vh; */
     border: 1.2rem solid white;
     background-color: white;
     border-radius:7%;
     box-shadow: 0.5rem 1rem #888888;
 }
+/* #experience{
+    width:100% !important;
+} */
 .timeline-box:nth-child(2n){
     left: 53%;
 }
 .image-insert1{
     background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
     background-size: cover;
-    height: 55vh;
+        
+    height: 94%;
     width:100%;
-    margin-top: -6%;
+    margin-top: 4%;
 }
 .image-insert2{
     background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
     background-size: cover;
-    height: 55vh;
+    height: 94%;
     width:100%;
-    margin-top: -6%;
+    margin-top: 4%;
 }
 .image-insert3{
     background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
     background-size: cover;
-    height: 55vh;
+    height: 94%;
     width:100%;
-    margin-top: -6%;
+    margin-top: 4%;
 }
 .image-insert4{
     background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
     background-size: cover;
-    height: 55vh;
+    height: 94%;
     width:100%;
-    margin-top: -6%;
+    margin-top: 4%;
 }
 #timeline-divider {
     margin-top: 5%;
@@ -690,49 +696,69 @@ Wherease for larger devices, sideways */
     height: 73%;
     width: 0;
     top: 10%;
-    left: 50%;
+    left: 45%;
     border: 0.2rem dashed rgb(105, 103, 103);
     /* color: #433E3F; */
 }
 
 .timeline-traveller {
+    font-size: 2rem;
     position: sticky;
     top: 25%;
     transform: rotate(90deg);
     margin-top: -3.5rem;
     margin-left: -0.6rem;
     color: black;
-    z-index: 2;
+    z-index: 200;
 }
-.timeline-box:nth-child(2n+1)::after{
-   
-    content: '';
-    position: absolute;
-    top: 49%;
-    right: -18%;
-    border-radius: 50%;
-    width: 0.9rem;
-    height: 0.9rem;
-    background-color: #433E3F;
-    z-index: 1;
+.dot1{
+    position:absolute;
+    width:12px;
+    height: 12px;
+    background-color: grey;
+   margin-left:46.28%;
+   margin-top:280px;
+   border-radius:100%;
+   z-index:1;
+    
 }
-.timeline-box:nth-child(2n)::after{
-    content: '';
-    position: absolute;
-    top: 45%;
-    left: -16%;
-    bottom: -20%;
-    border-radius: 50%;
-    width: 0.9rem;
-    height: 0.9rem;
-    background-color: #433E3F;
-    z-index: 1;
+.dot2{
+    position:absolute;
+    width:12px;
+    height: 12px;
+    background-color: grey;
+   margin-left:46.28%;
+   margin-top:575px;
+   border-radius:100%;
+   z-index:1;
+    
+}
+.dot3{
+    position:absolute;
+    width:12px;
+    height: 12px;
+    background-color: grey;
+   margin-left:46.28%;
+   margin-top:890px;
+   border-radius:100%;
+   z-index:1;
+    
+}
+.dot4{
+    position:absolute;
+    width:12px;
+    height: 12px;
+    background-color: grey;
+   margin-left:46.28%;
+   margin-top:1192px;
+   border-radius:100%;
+   z-index:1;    
+}
 
-}
 .inner_circle{
-   z-index: -100;
+    z-index: -100;
     position: relative;
-    top:40%;
+    top: 40%;
     left: 40%;
     width: 60%;
     height: 60%;
@@ -750,8 +776,8 @@ Wherease for larger devices, sideways */
 
 #inner_circle_text{
     position: relative;
-    top:83%;
-    left:3%;
+    top:75%;
+    left:2%;
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -759,10 +785,11 @@ Wherease for larger devices, sideways */
      color:blue;
      font-family: sans-serif;
      font-size: 3.5rem;
+     /* margin-left: 50%; */
 }
 .bottom{
     margin-top: -80%;
-    margin-left: 50%;
+    margin-left: 25%;
     font-weight: bold;
     color:blue;
 }
@@ -772,22 +799,42 @@ Wherease for larger devices, sideways */
     transition-duration: 0.5s; 
     animation: changeshape 1s ease-in-out 4 alternate;
  }
-@media screen and (max-width: 900px){
+ /* @media screen and (max-width: 1200px){
+    #experience{
+        width:100%;
+    }
+ } */
+
+
+@media screen and (max-width: 1150px){
     #timeline-divider {
         display: none;
 
     }
+    .timeline{
+        width:100% !important;
+    }
+    #experience{
+        width:100%;
+    }
+   
     .timeline-box{
         left: 12% !important;
-        width: 80%;
+        width: 350px;
+        margin-left:15%;
+        
     }
-    .timeline-box:nth-child(2n+1)::after{
+    .dot1{
         display: none;
-
     }
-    .timeline-box:nth-child(2n)::after{
+    .dot2{
         display: none;
-
+    }
+    .dot3{
+        display: none;
+    }
+    .dot4{
+        display: none;
     }
     .timeline-traveller {
         display: none;
@@ -797,13 +844,14 @@ Wherease for larger devices, sideways */
     }
 }
 
-#extra-section{
-    height: 10rem;
-    width: auto;
-    background-color:white;
-}
+
  /* TIMELINE SECTION ALOK */
 
+
+
+
+
+ 
 
 
 
