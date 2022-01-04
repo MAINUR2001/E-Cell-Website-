@@ -234,8 +234,8 @@ top: 0%;
 }
 .Banner_photo {
   font-size: 8rem;
-  margin: 0 0 0 8rem;
-  padding-top: 5.5rem;
+  margin: 0 0 0 7rem;
+  padding-top: 12.5rem;
   color: white;
   font-weight: 600;
   font-family: sans-serif;
@@ -247,7 +247,7 @@ top: 0%;
   padding-top: 20%;
 }
 .Banner_gallery {
-  margin: 0 0 0 7rem;
+  margin: 0 0 0 5rem;
   padding-top:1rem;
   padding-top: 1.4rem ;
   font-size: 14rem;
@@ -289,6 +289,7 @@ top: 0%;
 }
 
 @media only screen and (max-width: 1050px) {
+  
   .Banner_photo {
     font-size: 5.2rem;
     padding-top: 27rem;
@@ -298,27 +299,9 @@ top: 0%;
     font-size: 7rem;
     margin-left: 4.8rem;
   }
-  /* .dot{
-  margin: -3.2rem 26rem;
-  } */
+  
 }
-@media only screen and (max-width: 650px) {
-  .Banner_photo {
-    font-size: 2.1rem;
-  }
-  .Banner_gallery {
-    font-size: 3.2rem;
-  }
-  .Banner_start {
-    width: 100%;
-    /* background: url(../images/Bg_gallery.png) no-repeat fixed center; */
-    background: url(../images/Bg_gallerySmall.png) 0 0/100% 100% no-repeat;
-    background-position: 100%;
-  }
-  .Banner_navbar {
-    width: 80%;
-  }
-}
+
 @media only screen and (max-width: 450px) {
   .Banner_navbar {
     width: 97%;
@@ -347,12 +330,16 @@ top: 0%;
   @media only screen and (max-width: 840px) {
     .Banner_photo {
       font-size: 6rem;
-      padding-top: 20rem;
+      padding-top: 26rem;
       margin-left: 8.5rem;
     }
     .Banner_gallery {
       font-size: rem;
     }
+    .Banner_navbar {
+      width: 85%;
+    }
+
   }
   @media only screen and (min-width: 1260px) {
     .Banner_photo {
@@ -364,7 +351,7 @@ top: 0%;
   @media only screen and (max-width: 650px) {
     .Banner_photo {
       font-size: 5rem;
-      padding-top: 27rem;
+      padding-top: 32rem;
       margin-left: 8.5rem;
     }
     .Banner_gallery {
@@ -377,7 +364,7 @@ top: 0%;
       background-position: 100%;
     }
     .Banner_navbar {
-      width: 70%;
+      width: 85%;
     }
   }
   @media only screen and (max-width: 500px) {
@@ -386,6 +373,7 @@ top: 0%;
     }
     .Banner_navbar span {
       padding: 0.8rem 1.0rem;
+      font-size: 1.5rem;
       
     }
     .Banner_navbar span:hover {
