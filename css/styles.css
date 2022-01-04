@@ -241,7 +241,7 @@ html {
     /* text-shadow:0 0.3rem 0.5rem rgba(0,0,0,0.4); */
     opacity: 0;
     -webkit-text-fill-color: hsla(0, 0%, 100%, 0);
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: hsla(0, 0%, 100%, .836);
     animation: moveBannerUp 1s 0.3s forwards;
 }
