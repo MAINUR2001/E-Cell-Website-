@@ -26,7 +26,7 @@ body {
 
 .navbar{
   background-color: white;
-  color: black;
+  /* color: black; */
   /* color: rgb(194, 189, 189); */
   /* position: -webkit-sticky;
 position: sticky; */
@@ -68,7 +68,7 @@ top: 0%;
   font-weight:bolder;
   font-family:'poppins','sans-serif';
   padding:13px 12px;
-  color: #a29a9a;
+  color: #080606;
 }
 .underline{
   border-bottom: 5px solid #224259;
@@ -89,8 +89,9 @@ top: 0%;
   color:red;
   background-color: green;
 } */
-.active{
+.active_bar{
   background-color: #224259;
+  color: white;
 }
 
 /* @media only screen and  (max-width: 768px) {
@@ -139,8 +140,10 @@ top: 0%;
       
       flex-direction: column;
       /* background-color:  rgb(216,219,221); */
+      align-items: center;
+      justify-content: center;
       width: 100%;
-      /* border: solid black; */
+      /* border: solid red; */
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
@@ -239,10 +242,10 @@ top: 0%;
 }
 .Banner_navbar{
   position: absolute;
-  top: -2.3rem;
+  top: -3.5rem;
   background-color: white;
   min-width: 55%;
-  height: 4rem;
+  height: 7rem;
   border-radius: 5px;
   box-shadow:0.3rem 0px 0.2rem 0.2rem grey ;
   display: flex;
@@ -254,7 +257,10 @@ top: 0%;
   padding:4px 5px;
   font-size: 1.8rem;
   font-weight: 600;
-  font-family:   sans-serif;
+  text-align: center;
+  min-width: 5rem;
+  font-family: 'poppins',  'sans-serif';
+  border-radius: 5px;
 }
 .Banner_navbar span:hover{
   background-color: #224259;
@@ -262,228 +268,7 @@ top: 0%;
   
   cursor: pointer;
 }
-/* .Banner{
-  position: relative;
-  min-height: 700px; 
-  max-height: 800px;
-   padding: 0;
-}
-.bg-img{
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
-  background-image:url(../images/Bg_gallerY.jpg) ;
-}
-.overlay{
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-.Banner_photo {
-  font-size: 8rem;
-  margin: 0 0 0 8rem;
-  padding-top: 5.5rem;
-  color: white;
-  font-weight: 600;
-  font-family: sans-serif;
-  transition: 100;
-  
-}
-.top{
-  height: 600px; 
-  padding-top: 20%;
-}
-.Banner_gallery {
-  margin: 0 0 0 7rem;
-  padding-top:1rem;
-  padding-top: 1.4rem ;
-  font-size: 14rem;
-  color: white;
-  font-weight: 600;
-  font-family: sans-serif;
-  transition: 100;
-}
 
-.Banner_navbar {
-  display: flex;
-  box-shadow: 0.3rem 0px 0.2rem 0.2rem grey;
-  width: 61%;
-  margin: -3.5rem auto;
-  height: 7rem;
-  justify-content: space-evenly;
-  background-color: white;
-  align-items: center;
-  font-family: 'poppins',  'sans-serif';
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-.Banner_navbar span {
-  padding: 0.8rem 1.7rem;
-  color: #615d5d;
-  font-weight: 600;
-  font-size: 2rem;
-}
-.Banner_navbar span:hover {
-  background-color: #224259;
-  border-radius: 5px;
-  padding: 0.8rem 1.7rem;
-  color: white;
-  cursor: pointer;
-}
-.active {
-  background-color: #224259;
-  border-radius: 5px;
-  color:white !important;
-}
-
-@media only screen and (max-width: 1050px) {
-  .Banner_photo {
-    font-size: 5.2rem;
-    padding-top: 27rem;
-    margin-left: 5.5rem;
-  }
-  .Banner_gallery {
-    font-size: 7rem;
-    margin-left: 4.8rem;
-  }
-  
-}
-@media only screen and (max-width: 650px) {
-  .Banner_photo {
-    font-size: 2.1rem;
-  }
-  .Banner_gallery {
-    font-size: 3.2rem;
-  }
-  .Banner_start {
-    width: 100%;
-    
-    background: url(../images/Bg_gallerySmall.png) 0 0/100% 100% no-repeat;
-    background-position: 100%;
-  }
-  .Banner_navbar {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .Banner_navbar {
-    width: 97%;
-  }
-  .Banner_navbar span {
-    padding: 0.8rem 1.0rem;
-    
-  }
-  .Banner_navbar span:hover {
-    
-    padding: 0.8rem 1.0rem;
-    
-  }
-}
-  
-  @media only screen and (max-width: 970px) {
-    .Banner_photo {
-      font-size: 7rem;
-      padding-top: 18rem;
-      margin-left: 8.5rem;
-    }
-    .Banner_gallery {
-      font-size: 11rem;
-    }
-  }
-  @media only screen and (max-width: 840px) {
-    .Banner_photo {
-      font-size: 6rem;
-      padding-top: 20rem;
-      margin-left: 8.5rem;
-    }
-    .Banner_gallery {
-      font-size: rem;
-    }
-  }
-  @media only screen and (min-width: 1260px) {
-    .Banner_photo {
-      padding-top: 4rem;
-     
-    }
-   
-  }
-  @media only screen and (max-width: 650px) {
-    .Banner_photo {
-      font-size: 5rem;
-      padding-top: 27rem;
-      margin-left: 8.5rem;
-    }
-    .Banner_gallery {
-      font-size: 8rem;
-    }
-    .Banner_start {
-      width: 100%;
-      
-      background: url(../images/Bg_gallerySmall.png) 0 0/100% 100% no-repeat;
-      background-position: 100%;
-    }
-    .Banner_navbar {
-      width: 70%;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-    .Banner_navbar {
-      width: 96%;
-    }
-    .Banner_navbar span {
-      padding: 0.8rem 1.0rem;
-      
-    }
-    .Banner_navbar span:hover {
-      
-      padding: 0.8rem 1.0rem;
-      
-    }
-    .Banner_photo {
-      padding-top: 37rem;
-      margin-left: 4.5rem;
-    }
-    .Banner_gallery {
-      font-size: 7.5rem;
-      margin-left: 3.5rem;
-
-    }
-  }
-  @media only screen and (max-width: 350px) {
-    .Banner_navbar {
-      width: 97%;
-    }
-    .Banner_navbar span {
-      padding: 0.8rem 1.0rem;
-
-      font-size: 1.2rem;
-      
-    }
-    .Banner_navbar span:hover {
-      
-      padding: 0.8rem 1.0rem;
-      
-    }
-    .Banner_photo {
-      margin-left: 2.5rem;
-     
-      padding-top: 38rem;
-    }
-    .Banner_gallery {
-      margin-left:2.5rem;
-
-      font-size: 7.5rem;
-    }
-} */
 
 /* SAKSHI SECTION GALLERY PAGE TOP CSS */
 
@@ -506,6 +291,7 @@ html {
   flex-wrap: wrap;
   scroll-behavior: smooth;
   width: 100%;
+  margin-top: 8rem;
 }
 
 .gallery {

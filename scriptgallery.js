@@ -30,16 +30,12 @@ function opaquenavbar(){
             // // navbar.style.opacity="0.5";
             // navbar.style.zIndex="10";
             navbar.classList.add("opaque");
-            for(var i=0;i<opc.length;i++){
-                opc[i].style.color="black"
-            }
+            
         }
         if(x<105){
             // navbar.style.backgroundColor="none";
             navbar.classList.remove("opaque");
-            for(var i=0;i<opc.length;i++){
-                opc[i].style.color="white"
-            }
+           
             // navbar.style.opacity="0.5"; 
             // navbar.style.zIndex="10";
         }
@@ -165,9 +161,9 @@ for (var i = 0; i < tab.length; i++) {
     // }
     console.log("tab",tab.length);
     tab[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active-bar");
-    current[0].className = current[0].className.replace("active-bar", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("active_bar");
+    current[0].className = current[0].className.replace("active_bar", "");
+    this.className += " active_bar";
     // this.style.borderBottom="1px solid black"
     // this.parentElement.classList.toggle("underline");
     });
