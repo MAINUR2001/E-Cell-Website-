@@ -205,6 +205,7 @@ top: 0%;
   background-size: auto;
   background-position: cover;
 } */
+
 .Banner{
   position: relative;
   min-height: 700px; 
@@ -255,14 +256,7 @@ top: 0%;
   font-family: sans-serif;
   transition: 100;
 }
-.dot{
-  display: block;
-  width: 1.8rem;
-  height: 1.8rem;
-  margin: -4.2rem 50rem;
-  background-color: white;
-  border-radius: 50%;
-}
+
 .Banner_navbar {
   display: flex;
   box-shadow: 0.3rem 0px 0.2rem 0.2rem grey;
@@ -287,6 +281,11 @@ top: 0%;
   border-radius: 5px;
   padding: 0.8rem 1.7rem;
   color: white;
+}
+.active {
+  background-color: #224259;
+  border-radius: 5px;
+  color:white !important;
 }
 
 @media only screen and (max-width: 1050px) {
