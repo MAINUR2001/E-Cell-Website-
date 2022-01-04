@@ -1268,7 +1268,183 @@ section {
 
 
 /* EVENT HIGHLIGHT CSS MAINUR*/
-
+/* Our team css starts */
+.img-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, white, black);
+    overflow: hidden;
+  }
+  
+  .box-our-team {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: cover;
+  }
+  
+  .boxa, .boxb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .img-wrapper img {
+    width: 19.5vw;
+    height: 49.5vh;
+    opacity: 0;
+    object-fit: contain;
+  }
+  
+  .img1, .img9, .img5 {
+    animation: fadeInDown 7s forwards;
+  }
+  
+  .img10, .img4, .img3 {
+    animation: fadeInDown 7s 2.33s forwards;
+  }
+  
+  .img2, .img6 {
+    animation: fadeInDown 7s 3.77s forwards;
+  }
+  
+  .img8, .img7 {
+    animation: fadeInDown 7s 5.55s forwards;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    17% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+  
+    43% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    67% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+  
+    77% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+  }
+  
+  .banner-our-team {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+  }
+  
+  .banner-our-team h1 {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    color: white;
+    font-weight: 300;
+    line-height: 9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner-our-team p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner-our-team i {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    animation: MoveUpDown 1s linear infinite;
+    padding-top: 5rem;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @media (max-width:1500px) {
+    img {
+      object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 955px) {
+    .img1, .img5, .img6, .img10 {
+      display: none;
+    }
+  
+    .box1, .box5, .box6, .box10 {
+      display: none;
+    }
+  
+    img {
+      width: 32vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .img3, .img8 {
+      display: none;
+    }
+  
+    .box3, .box8 {
+      display: none;
+    }
+  
+    img {
+      width: 49.5vw;
+    }
+  }
+  
+  @media (max-width:500px) {
+    .banner-our-team h1 {
+      font-size: 6rem;
+    }
+  
+    .banner-our-team p {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width:400px) {
+    .banner-our-team h1 { 
+      font-size: 5rem;
+    }
+  
+    .banner-our-team p {
+      font-size: 2.5rem;
+    }
+  }
+  /* Our team css end here  */
 
 /* FOOTER CSS RAJAK  */
 

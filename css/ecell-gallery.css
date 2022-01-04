@@ -90,7 +90,7 @@ top: 0%;
   background-color: green;
 } */
 .active{
-  background-color: green;
+  background-color: #224259;
 }
 
 /* @media only screen and  (max-width: 768px) {
@@ -205,8 +205,64 @@ top: 0%;
   background-size: auto;
   background-position: cover;
 } */
-
-.Banner{
+.bg-img{
+  background: url(../images/Bg_gallerY.jpg);
+  background-size: cover;
+  min-width: 100%;
+  
+  padding-top: 56.23%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.photo{
+  position: absolute;
+  top:60%;
+  left:20%;
+  font-size: 5vw;
+  
+  color: white;
+}
+.gallery-banner{
+  position: absolute;
+  top:70%;
+  left: 18%;
+  font-size: 8vw;
+  color: white;
+  display: flex;
+  
+}
+.banner_head{
+  display: flex;
+  
+  justify-content: center;
+  position: relative;
+}
+.Banner_navbar{
+  position: absolute;
+  top: -2.3rem;
+  background-color: white;
+  min-width: 55%;
+  height: 4rem;
+  border-radius: 5px;
+  box-shadow:0.3rem 0px 0.2rem 0.2rem grey ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.Banner_navbar span{
+  padding:4px 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family:   sans-serif;
+}
+.Banner_navbar span:hover{
+  background-color: #224259;
+  border-radius: 5px;
+  
+  cursor: pointer;
+}
+/* .Banner{
   position: relative;
   min-height: 700px; 
   max-height: 800px;
@@ -281,6 +337,7 @@ top: 0%;
   border-radius: 5px;
   padding: 0.8rem 1.7rem;
   color: white;
+  cursor: pointer;
 }
 .active {
   background-color: #224259;
@@ -298,9 +355,7 @@ top: 0%;
     font-size: 7rem;
     margin-left: 4.8rem;
   }
-  /* .dot{
-  margin: -3.2rem 26rem;
-  } */
+  
 }
 @media only screen and (max-width: 650px) {
   .Banner_photo {
@@ -311,7 +366,7 @@ top: 0%;
   }
   .Banner_start {
     width: 100%;
-    /* background: url(../images/Bg_gallery.png) no-repeat fixed center; */
+    
     background: url(../images/Bg_gallerySmall.png) 0 0/100% 100% no-repeat;
     background-position: 100%;
   }
@@ -357,7 +412,7 @@ top: 0%;
   @media only screen and (min-width: 1260px) {
     .Banner_photo {
       padding-top: 4rem;
-      /* margin-top: -rem; */
+     
     }
    
   }
@@ -372,7 +427,7 @@ top: 0%;
     }
     .Banner_start {
       width: 100%;
-      /* background: url(../images/Bg_gallery.png) no-repeat fixed center; */
+      
       background: url(../images/Bg_gallerySmall.png) 0 0/100% 100% no-repeat;
       background-position: 100%;
     }
@@ -428,7 +483,7 @@ top: 0%;
 
       font-size: 7.5rem;
     }
-}
+} */
 
 /* SAKSHI SECTION GALLERY PAGE TOP CSS */
 
