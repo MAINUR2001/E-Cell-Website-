@@ -176,8 +176,8 @@ const tab=sakshi_banner.querySelectorAll("span");
 for (var i = 0; i < tab.length; i++) {
     console.log("tab",tab.length);
     tab[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active-banner");
-    current[0].className = current[0].className.replace("active-banner", "");
-    this.className += " active-banner";
+    var current = document.getElementsByClassName("active_banner");
+    current[0].className = current[0].className.replace("active_banner", "");
+    this.className += " active_banner";
     });
   }

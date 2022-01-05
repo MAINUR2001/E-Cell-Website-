@@ -458,28 +458,30 @@ body{
       .Banner_navbar span {
         font-family:'poppins','sans-serif';
         padding: 0.8rem 1.7rem;
-        color: black;
+        /* color: black; */
         font-weight: 600;
         font-size: 1.7rem;
         border-radius: 5px;
       }
       .Banner_navbar span:hover{
+        font-family:'poppins','sans-serif';
           cursor: pointer;
           background-color: #224259;
           border-radius: 5px;
+          color: white;
       }
-      .active-banner{
+      .active_banner{
         background-color: #224259;
         color: white;
       }
-      @media only screen and (max-width: 608px) {
+      @media only screen and (max-width: 884px) {
           .Banner_navbar{
               display: flex;
               flex-direction: column;
               height: 15rem;
               border-left: 2px solid rgb(14, 13, 13);
-              position: sticky;
-              top:81px;
+              /* position: sticky;
+              top:81px; */
           }
            
       }
