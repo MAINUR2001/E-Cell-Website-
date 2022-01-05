@@ -461,8 +461,8 @@ body{
         position: relative;
       }
       .Banner_navbar{
-        position: absolute;
-        top: -3.5rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
         background-color: white;
         min-width: 55%;
         height: 7rem;
@@ -473,6 +473,7 @@ body{
         justify-content: space-around;
         align-items: center;
         color: grey;
+        border-left:1px solid black;
        
       }
 
@@ -494,12 +495,12 @@ body{
       .Banner_navbar span:hover{
         background-color: #224259;
         border-radius: 5px;
-        
+        color: white;
         cursor: pointer;
       }
       .active_bar{
         background-color: #224259;
-        color: white;
+        color: white !important;
       }
       @media only screen and (max-width: 884px) {
           .Banner_navbar{
