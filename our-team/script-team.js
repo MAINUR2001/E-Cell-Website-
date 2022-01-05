@@ -1,8 +1,29 @@
-// const banner=document.querySelector(".Banner_start");
+function openTab(category) {
+    var i;
+    var x = document.getElementsByClassName("ecellteam");
+    // console.log(x);
+    for (i = 0; i < x.length; i++) {
+        console.log(x[i].style.display);
+        
+        
+
+            x[i].style.display = "none";
+            console.log(x[i].style.display);
+        
+    }
+    if(category=='faculty'){
+        document.getElementById(category).style.display = "grid";
+    }
+    else{
+
+        document.getElementById(category).style.display = "block";
+    }
+  }
+  console.log(document.getElementById("faculty").style.display);
+
+  // const banner=document.querySelector(".Banner_start");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector("ul");
-const opc=navMenu.getElementsByTagName("a");
-console.log(opc[0]);
 const links =navMenu.getElementsByClassName("links");
 const image=document.querySelector(".image");
 const navbar=document.querySelector(".navbar");
@@ -11,7 +32,7 @@ const y=screen.width;
 
 // console.log(banner.style.height);
 const documents=document;
-document.addEventListener("scroll",opaquenavbar);
+// document.addEventListener("scroll",opaquenavbar);
 body.addEventListener("click",clickfunction);
 hamburger.addEventListener("click", mobileMenu);
  function clickfunction(){
@@ -30,16 +51,10 @@ function opaquenavbar(){
             // // navbar.style.opacity="0.5";
             // navbar.style.zIndex="10";
             navbar.classList.add("opaque");
-            for(var i=0;i<opc.length;i++){
-                opc[i].style.color="black"
-            }
         }
         if(x<105){
             // navbar.style.backgroundColor="none";
             navbar.classList.remove("opaque");
-            for(var i=0;i<opc.length;i++){
-                opc[i].style.color="white"
-            }
             // navbar.style.opacity="0.5"; 
             // navbar.style.zIndex="10";
         }
@@ -65,33 +80,33 @@ function closeMenu() {
 console.log(navMenu)
 
 //  active class on gallery page
-for (var i = 0; i < links.length; i++) {
-    // if(i==3){
-    //     links[3].style.hover="none";
-    //     continue;
-    // }
-    links[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("underline");
-    current[0].className = current[0].className.replace("underline", "");
-    this.className += " underline";
-    console.log("this of underline:::>>",this.innerElement(),document.getElementsByTagName("A"))
+// for (var i = 0; i < links.length; i++) {
+//     // if(i==3){
+//     //     links[3].style.hover="none";
+//     //     continue;
+//     // }
+//     links[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("underline");
+//     current[0].className = current[0].className.replace("underline", "");
+//     this.className += " underline";
+//     console.log("this of underline:::>>",this.innerElement(),document.getElementsByTagName("A"))
     
     
-    });
-  }
+//     });
+//   }
 
 
 // Sakshi tab part 
 
-function openTab(category) {
-    var i;
-    var x = document.getElementsByClassName("image-gallery");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
+// function openTab(category) {
+//     var i;
+//     var x = document.getElementsByClassName("image-gallery");
+//     for (i = 0; i < x.length; i++) {
+//       x[i].style.display = "none";
+//     }
     
-    document.getElementById(category).style.display = "block";
-  }
+//     document.getElementById(category).style.display = "block";
+//   }
 
 //   onclick on tab
 
@@ -159,16 +174,10 @@ const tab=sakshi_banner.querySelectorAll("span");
 
 
 for (var i = 0; i < tab.length; i++) {
-    // if(i==3){
-    //     links[3].style.hover="none";
-    //     continue;
-    // }
     console.log("tab",tab.length);
     tab[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active-bar");
-    current[0].className = current[0].className.replace("active-bar", "");
-    this.className += " active";
-    // this.style.borderBottom="1px solid black"
-    // this.parentElement.classList.toggle("underline");
+    var current = document.getElementsByClassName("active-banner");
+    current[0].className = current[0].className.replace("active-banner", "");
+    this.className += " active-banner";
     });
   }

@@ -16,10 +16,10 @@ body {
 }
 
 .navbar {
-    background-color: rgb(37, 169, 224);
+    
     color: black;
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
     top: 0%;
     width: 100%;
@@ -54,12 +54,12 @@ body {
     font-weight: bolder;
     font-family: 'poppins', 'sans-serif';
     padding: 13px 12px;
-    /* color: #262ccf; */
-    color: #551A8B;
+    
+    color: white;
 }
 
 .navbar li a:hover {
-    color: rgb(253, 253, 253);
+    color: black;
 }
 
 
@@ -96,7 +96,7 @@ body {
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: rgb(216, 219, 221);
+    background-color: rgb(22, 26, 29);
 }
 
 @media only screen and (max-width: 872px) {
@@ -148,14 +148,18 @@ body {
     .ham-bar {
         margin: 13px 15px;
     }
+   
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
+        /* background-color: white; */
     }
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(12px) rotate(45deg);
+        background-color: white;
     }
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-12px) rotate(-45deg);
+        background-color: white;
     }
 }
 
@@ -199,9 +203,10 @@ html {
 
 .parallax {
     /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/home_page_image.png) no-repeat; */
-    background-image: url(../images/home_page_image.png);
+    background-image: url(../images/home_page_image.jpg);
     background-size: cover;
     object-fit: cover;
+    opacity: 0.9;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -697,35 +702,44 @@ section {
 }
 
 .image-insert1 {
-    background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+    background-image: url("../images/new_orientation.png");
     background-size: cover;
-    height: 94%;
+    /* background-position: center; */
+    /* weight: 100%; */
+    /* display: cover; */
+    height: 98%;
     width: 100%;
-    margin-top: 4%;
+    margin-top: 1.5%;
+    border-radius: 7%;
 }
 
 .image-insert2 {
-    background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+    background-image: url("../images/Website-Srijan.png");
     background-size: cover;
-    height: 94%;
+    height: 98%;
     width: 100%;
-    margin-top: 4%;
+    margin-top: 1.5%;
+    border-radius: 7%;
 }
 
 .image-insert3 {
-    background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+    background-image: url("../images/Website-TecnoEmpressario-01.png");
     background-size: cover;
-    height: 94%;
+    height: 98%;
     width: 100%;
-    margin-top: 4%;
+    margin-top: 1.5%;
+    border-radius: 7%;
 }
 
 .image-insert4 {
-    background-image: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+    background-image: url("../images/incubation_new.png");
     background-size: cover;
-    height: 94%;
+    /* background-positon: center; */
+    background-position: center;
+    height: 98%;
     width: 100%;
-    margin-top: 4%;
+    margin-top: 1.5%;
+    border-radius: 7%;
 }
 
 #timeline-divider {
@@ -799,12 +813,14 @@ section {
     z-index: -100;
     position: relative;
     top: 40%;
-    left: 40%;
-    width: 60%;
+    left: 20%;
+    width: 80%;
     height: 60%;
-    border-radius: 90rem 0rem 0rem 1rem;
-    background-color: burlywood;
-    opacity: 0.3;
+    border-radius: 90rem 0rem 9rem 1rem;
+    /* background-color: burlywood0; */
+    background-color: white;
+    /* background-color: black; */
+    opacity: 0.6;
 }
 
 .timeline:hover {
@@ -817,24 +833,28 @@ section {
 
 #inner_circle_text {
     position: relative;
-    top: 75%;
+    top: 55%;
     left: 2%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    /* opacity: 2; */
 }
 
 .top {
-    color: blue;
+    color: black;
     font-family: sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin-left: 15%;
+    opacity: 1.0;
     /* margin-left: 50%; */
 }
 
 .bottom {
-    margin-top: -80%;
-    margin-left: 25%;
-    font-weight: bold;
-    color: blue;
+    margin-top: -35%;
+    margin-left: 40%;
+    font-weight: 520;
+    color: black;
+    opacity: 1.0;
 }
 
 .zoom:hover {
@@ -880,9 +900,13 @@ section {
     .timeline-traveller {
         display: none;
     }
+    .inner_circle{
+        width: 60%;
+        margin-left: 20%;
+    }
     .bottom {
         margin-left: 35%;
-        margin-top: -70%;
+        margin-top: -45%;
     }
 }
 
@@ -902,7 +926,7 @@ section {
     padding: 5rem;
     width: 100%;
     max-width: 115rem;
-    margin: 0 auto;
+    margin: 4rem auto;
     background-color: #f7f7f7;
 }
 
@@ -992,12 +1016,13 @@ section {
     text-align: center;
     background-color: #111;
     color: #fff;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 1.3rem;
     text-transform: uppercase;
     text-decoration: none;
-    width: 15rempx;
-    height: 4.3rem;
-    padding: 1rem 3rem;
+    width: 15rem;
+    height: 5.3rem;
+    padding: 1.8rem 3rem;
     display: inline-block;
     border-radius: 1rem;
     transition: all 0.2s;
@@ -1268,7 +1293,183 @@ section {
 
 
 /* EVENT HIGHLIGHT CSS MAINUR*/
-
+/* Our team css starts */
+.img-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(180deg, white, black);
+    overflow: hidden;
+  }
+  
+  .box-our-team {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    object-fit: cover;
+  }
+  
+  .boxa, .boxb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .img-wrapper img {
+    width: 19.5vw;
+    height: 49.5vh;
+    opacity: 0;
+    object-fit: contain;
+  }
+  
+  .img1, .img9, .img5 {
+    animation: fadeInDown 7s forwards;
+  }
+  
+  .img10, .img4, .img3 {
+    animation: fadeInDown 7s 2.33s forwards;
+  }
+  
+  .img2, .img6 {
+    animation: fadeInDown 7s 3.77s forwards;
+  }
+  
+  .img8, .img7 {
+    animation: fadeInDown 7s 5.55s forwards;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    17% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+  
+    43% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    67% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+  
+    77% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 0.4;
+      transform: translateY(0);
+    }
+  }
+  
+  .banner-our-team {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+  }
+  
+  .banner-our-team h1 {
+    font-family: 'Baloo Da 2', serif;
+    font-size: 8rem;
+    color: white;
+    font-weight: 300;
+    line-height: 9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner-our-team p {
+    font-family: 'Josefin Slab', serif;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .banner-our-team i {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    animation: MoveUpDown 1s linear infinite;
+    padding-top: 5rem;
+  }
+  
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @media (max-width:1500px) {
+    img {
+      object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 955px) {
+    .img1, .img5, .img6, .img10 {
+      display: none;
+    }
+  
+    .box1, .box5, .box6, .box10 {
+      display: none;
+    }
+  
+    img {
+      width: 32vw;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .img3, .img8 {
+      display: none;
+    }
+  
+    .box3, .box8 {
+      display: none;
+    }
+  
+    img {
+      width: 49.5vw;
+    }
+  }
+  
+  @media (max-width:500px) {
+    .banner-our-team h1 {
+      font-size: 6rem;
+    }
+  
+    .banner-our-team p {
+      font-size: 3rem;
+    }
+  }
+  
+  @media (max-width:400px) {
+    .banner-our-team h1 { 
+      font-size: 5rem;
+    }
+  
+    .banner-our-team p {
+      font-size: 2.5rem;
+    }
+  }
+  /* Our team css end here  */
 
 /* FOOTER CSS RAJAK  */
 
