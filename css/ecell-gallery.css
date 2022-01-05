@@ -194,18 +194,6 @@ top: 0%;
 
 }
 
-/* .Banner_start {
-  margin: 0.8rem auto;
-  width: 100%;
-  background-image: url(../images/Bg_gallerY.jpg);
-  background-color: red;
-  height:600px;
-  background-repeat: no-repeat;
-  
-  background-size: auto;
-  background-position: cover;
-} */
-
 .Banner{
   position: relative;
   min-height: 700px; 
@@ -239,7 +227,7 @@ top: 0%;
   color: white;
   font-weight: 600;
   font-family: sans-serif;
-  transition: 100;
+  transition: 0.5s ease;
   
 }
 .top{
@@ -254,7 +242,7 @@ top: 0%;
   color: white;
   font-weight: 600;
   font-family: sans-serif;
-  transition: 100;
+  transition: 0.5s ease;
 }
 
 .Banner_navbar {
@@ -359,7 +347,6 @@ top: 0%;
     }
     .Banner_start {
       width: 100%;
-      /* background: url(../images/Bg_gallery.png) no-repeat fixed center; */
       background: url(../images/Bg_gallerySmall.png) 0 0/100% 100% no-repeat;
       background-position: 100%;
     }
