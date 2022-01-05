@@ -197,17 +197,7 @@ top: 0%;
 
 }
 
-/* .Banner_start {
-  margin: 0.8rem auto;
-  width: 100%;
-  background-image: url(../images/Bg_gallerY.jpg);
-  background-color: red;
-  height:600px;
-  background-repeat: no-repeat;
-  
-  background-size: auto;
-  background-position: cover;
-} */
+
 .bg-img{
   background: url(../images/Bg_gallerY.jpg);
   background-size: cover;
@@ -252,6 +242,7 @@ top: 0%;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+ 
 }
 .Banner_navbar span{
   padding:4px 5px;
@@ -261,12 +252,16 @@ top: 0%;
   min-width: 5rem;
   font-family: 'poppins',  'sans-serif';
   border-radius: 5px;
+  color: grey;
 }
 .Banner_navbar span:hover{
   background-color: #224259;
   border-radius: 5px;
   
   cursor: pointer;
+}
+.active_bar{
+  color: white !important;
 }
 
 
