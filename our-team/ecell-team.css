@@ -105,7 +105,8 @@ body{
         height:500vh;
         width:100vw;
         background-color: #000;
-        opacity: 0.8;
+        opacity: 1;
+        font-family:'poppins','sans-serif';
 }
     .navbar ul {
         position: fixed;
