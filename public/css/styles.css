@@ -170,6 +170,7 @@ html {
     font-size: 62.5%;
     /* the above code makes 1 rem equal 10 pixels */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 

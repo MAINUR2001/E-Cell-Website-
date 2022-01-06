@@ -2,6 +2,9 @@ html{
     font-size:62.5%; 
     /* the above code makes 1 rem equal 10 pixels */
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
 }
 *{
     margin:0;
@@ -17,7 +20,9 @@ body{
     font-family: "Open Sans",sans-serif; */
     /* font-size: 62.5%; */
     /* background-color: rgb(47,48,68); */
-    
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .navbar{
@@ -335,6 +340,27 @@ body{
   width: 45rem;
   height: auto;
 }
+
+@media screen and (max-width: 600px){
+  .memberImage img{
+    width: 40rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .memberImage img{
+    width: 30rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 400px){
+  .memberImage img{
+    width: 22rem;
+    height: auto;
+  }
+}
+
   .row{
       display: flex;
       /* padding-top: 2rem; */
