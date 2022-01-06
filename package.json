@@ -1,0 +1,21 @@
+{
+  "name": "e-cell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nothinga"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "esp": "^0.1.16",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
