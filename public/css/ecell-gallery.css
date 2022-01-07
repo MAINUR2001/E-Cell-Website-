@@ -564,7 +564,16 @@ footer hr {
   height: 100%;
 }
 
+.fix{
+  width: auto !important;
+  background-color: transparent !important;
+  border-radius: 0% !important;
+  border: none  !important;
+}
 
+.fix:after{
+  background-color: transparent !important;
+}
 /* footer col-3 start here */
 
 .fcol-3 {
