@@ -665,6 +665,7 @@ Wherease for larger devices, sideways */
 
 /* TIMELINE SECTION ALOK */
 
+
 section {
     padding-top: -10rem;
     width: 90%;
@@ -678,6 +679,7 @@ section {
     padding-bottom: 2%;
     border-left: 100%;
     margin: auto;
+    overflow:hidden;
 }
 
 .section-heading {
@@ -735,7 +737,7 @@ section {
 }
 
 .image-insert1 {
-    background-image: url("/images/new_orientation.png");
+    background-image: url("../images/new_orientation.png");
     background-size: cover;
     /* background-position: center; */
     /* weight: 100%; */
@@ -747,7 +749,7 @@ section {
 }
 
 .image-insert2 {
-    background-image: url("/images/Website-Srijan.png");
+    background-image: url("../images/Website-Srijan.png");
     background-size: cover;
     height: 98%;
     width: 100%;
@@ -756,7 +758,7 @@ section {
 }
 
 .image-insert3 {
-    background-image: url("/images/Website-TecnoEmpressario-01.png");
+    background-image: url("../images/Website-TecnoEmpressario-01.png");
     background-size: cover;
     height: 98%;
     width: 100%;
@@ -765,7 +767,7 @@ section {
 }
 
 .image-insert4 {
-    background-image: url("/images/incubation_new.png");
+    background-image: url("../images/incubation_new.png");
     background-size: cover;
     /* background-positon: center; */
     background-position: center;
@@ -897,11 +899,7 @@ section {
 }
 
 
-/* @media screen and (max-width: 1200px){
-    #experience{
-        width:100%;
-    }
- } */
+
 
 @media screen and (max-width: 1150px) {
     #timeline-divider {
@@ -933,7 +931,7 @@ section {
     .timeline-traveller {
         display: none;
     }
-    .inner_circle{
+    .inner_circle {
         width: 60%;
         margin-left: 20%;
     }
@@ -942,7 +940,23 @@ section {
         margin-top: -45%;
     }
 }
-
+ @media screen and (max-width: 600px){
+    .timeline-box{
+        left:0% !important;
+        /* margin: auto !important; */
+    }
+    .timeline-box{
+        width:75vw;
+    }
+    .top {
+        color: black;
+        font-family: sans-serif;
+        font-size: 2.0rem;
+        margin-left: 15%;
+        opacity: 1.0;
+        /* margin-left: 50%; */
+    }
+ } 
 
 /* TIMELINE SECTION ALOK */
 
