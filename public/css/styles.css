@@ -679,7 +679,7 @@ section {
     padding-bottom: 2%;
     border-left: 100%;
     margin: auto;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 .section-heading {
@@ -1105,6 +1105,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 20% 90% 90%;
     grid-template-areas: "event__Header event__Header" "left__Box right__Box" "event__Footer event__Footer";
+    margin-top: 100px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1335,6 +1336,18 @@ section {
         padding: 4%;
         font-size: 1.5rem;
         margin-top: -8%;
+    }
+    .event__Box:hover h2{
+        padding-bottom: 20px;
+        transform: scale(1.1);
+    }
+    .event__Box:hover h3 {
+        font-size: 9px;
+        padding-bottom: 10px;
+        line-height: 1;
+    }
+    .event__Box{
+        margin-bottom: 1.6rem;
     }
 }
 
