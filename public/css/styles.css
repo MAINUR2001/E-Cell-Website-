@@ -403,10 +403,13 @@ html {
         line-height: 2;
     }
     .content-wrapper h1 {
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
     }
     .content-wrapper {
         width: 80vw;
+    }
+    .parallax{
+        background-position: center;
     }
 }
 
@@ -439,15 +442,21 @@ html {
 }
 
 @media (max-width: 555px) {
+
+    .content-wrapper {
+        width: 98vw;
+    }
+
     .content-wrapper h2 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     .content-wrapper h1 {
-        font-size: 4rem;
+        font-size: 4.75rem;
     }
     .content-header h3 {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         padding: .5rem;
+        font-weight: 500;
     }
     .content-wrapper button {
         width: 30vw;
@@ -455,24 +464,45 @@ html {
     }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 390px) {
     .content-wrapper h2 {
-        font-size: 1.75rem;
+        font-size: 3rem;
     }
     .content-wrapper h1 {
-        font-size: 3.25rem;
+        font-size: 4.25rem;
     }
     .content-header h3 {
-        font-size: 1.55rem;
+        font-size: 2rem;
         padding: .25rem;
-    }
-    .content-wrapper button {
-        width: 35vw;
-        font-size: 1.25rem;
     }
     .social-icons i {
         font-size: 2.5rem;
     }
+}
+
+@media (max-width: 334px){
+    .content-wrapper h2 {
+        font-size: 3rem;
+    }
+    .content-wrapper h1 {
+        font-size: 4.25rem;
+    }
+    .content-header h3 {
+        font-size: 1.75rem;
+        padding: .25rem;
+    }
+
+    .content-wrapper i{
+        display: none;
+    }
+}
+
+@media (max-width: 292px){
+    .content-header {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -547,6 +577,7 @@ html {
     .about_about {
         font-size: 2.5rem;
         margin: 20px;
+        
     }
     .about_header {
         font-size: 5rem;
@@ -563,6 +594,7 @@ html {
 @media screen and (max-width:855px) {
     .about_about {
         font-size: 2rem;
+        text-align: justify;
     }
     .about_img {
         width: 90%;
@@ -633,6 +665,7 @@ Wherease for larger devices, sideways */
 
 /* TIMELINE SECTION ALOK */
 
+
 section {
     padding-top: -10rem;
     width: 90%;
@@ -646,6 +679,7 @@ section {
     padding-bottom: 2%;
     border-left: 100%;
     margin: auto;
+    overflow:hidden;
 }
 
 .section-heading {
@@ -703,7 +737,7 @@ section {
 }
 
 .image-insert1 {
-    background-image: url("/images/new_orientation.png");
+    background-image: url("../images/new_orientation.png");
     background-size: cover;
     /* background-position: center; */
     /* weight: 100%; */
@@ -715,7 +749,7 @@ section {
 }
 
 .image-insert2 {
-    background-image: url("/images/Website-Srijan.png");
+    background-image: url("../images/Website-Srijan.png");
     background-size: cover;
     height: 98%;
     width: 100%;
@@ -724,7 +758,7 @@ section {
 }
 
 .image-insert3 {
-    background-image: url("/images/Website-TecnoEmpressario-01.png");
+    background-image: url("../images/Website-TecnoEmpressario-01.png");
     background-size: cover;
     height: 98%;
     width: 100%;
@@ -733,7 +767,7 @@ section {
 }
 
 .image-insert4 {
-    background-image: url("/images/incubation_new.png");
+    background-image: url("../images/incubation_new.png");
     background-size: cover;
     /* background-positon: center; */
     background-position: center;
@@ -865,11 +899,7 @@ section {
 }
 
 
-/* @media screen and (max-width: 1200px){
-    #experience{
-        width:100%;
-    }
- } */
+
 
 @media screen and (max-width: 1150px) {
     #timeline-divider {
@@ -901,7 +931,7 @@ section {
     .timeline-traveller {
         display: none;
     }
-    .inner_circle{
+    .inner_circle {
         width: 60%;
         margin-left: 20%;
     }
@@ -910,7 +940,23 @@ section {
         margin-top: -45%;
     }
 }
-
+ @media screen and (max-width: 600px){
+    .timeline-box{
+        left:0% !important;
+        /* margin: auto !important; */
+    }
+    .timeline-box{
+        width:75vw;
+    }
+    .top {
+        color: black;
+        font-family: sans-serif;
+        font-size: 2.0rem;
+        margin-left: 15%;
+        opacity: 1.0;
+        /* margin-left: 50%; */
+    }
+ } 
 
 /* TIMELINE SECTION ALOK */
 
