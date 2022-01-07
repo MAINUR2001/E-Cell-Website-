@@ -403,10 +403,13 @@ html {
         line-height: 2;
     }
     .content-wrapper h1 {
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 2px;
     }
     .content-wrapper {
         width: 80vw;
+    }
+    .parallax{
+        background-position: center;
     }
 }
 
@@ -439,15 +442,21 @@ html {
 }
 
 @media (max-width: 555px) {
+
+    .content-wrapper {
+        width: 98vw;
+    }
+
     .content-wrapper h2 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     .content-wrapper h1 {
-        font-size: 4rem;
+        font-size: 4.75rem;
     }
     .content-header h3 {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         padding: .5rem;
+        font-weight: 500;
     }
     .content-wrapper button {
         width: 30vw;
@@ -455,24 +464,45 @@ html {
     }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 390px) {
     .content-wrapper h2 {
-        font-size: 1.75rem;
+        font-size: 3rem;
     }
     .content-wrapper h1 {
-        font-size: 3.25rem;
+        font-size: 4.25rem;
     }
     .content-header h3 {
-        font-size: 1.55rem;
+        font-size: 2rem;
         padding: .25rem;
-    }
-    .content-wrapper button {
-        width: 35vw;
-        font-size: 1.25rem;
     }
     .social-icons i {
         font-size: 2.5rem;
     }
+}
+
+@media (max-width: 334px){
+    .content-wrapper h2 {
+        font-size: 3rem;
+    }
+    .content-wrapper h1 {
+        font-size: 4.25rem;
+    }
+    .content-header h3 {
+        font-size: 1.75rem;
+        padding: .25rem;
+    }
+
+    .content-wrapper i{
+        display: none;
+    }
+}
+
+@media (max-width: 292px){
+    .content-header {
+        flex-direction: column;
+    }
+
 }
 
 
@@ -547,6 +577,7 @@ html {
     .about_about {
         font-size: 2.5rem;
         margin: 20px;
+        
     }
     .about_header {
         font-size: 5rem;
@@ -563,6 +594,7 @@ html {
 @media screen and (max-width:855px) {
     .about_about {
         font-size: 2rem;
+        text-align: center;
     }
     .about_img {
         width: 90%;
