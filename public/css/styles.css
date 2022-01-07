@@ -594,7 +594,7 @@ html {
 @media screen and (max-width:855px) {
     .about_about {
         font-size: 2rem;
-        text-align: center;
+        text-align: justify;
     }
     .about_img {
         width: 90%;
