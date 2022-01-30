@@ -1879,6 +1879,17 @@ footer hr {
   border-radius: 50%;
 }
 
+.fix{
+    width: auto !important;
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    border: none  !important;
+}
+
+.fix:after{
+    background-color: transparent !important;
+}
+
 .fcol-2 a:hover:after {
   top: 5%;
   -webkit-transition: all 0.3s linear 0.1s;
