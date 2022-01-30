@@ -107,3 +107,13 @@ for (var i = 0; i < tab.length; i++) {
     
     });
   }
+for (var i = 0; i < links.length; i++) {
+    // 
+    console.log("links",links.length);
+    links[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("underline");
+    current[0].className = current[0].className.replace("underline", "");
+    this.className += "underline";
+    
+    });
+  }
