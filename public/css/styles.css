@@ -267,6 +267,7 @@ html {
     align-items: center;
     justify-content: center;
     line-height: 1.2;
+    margin-top: 10rem;
   }
   
   /* CSS codes for H1 heading present inside content-wrapper */
@@ -293,6 +294,10 @@ html {
     opacity: 0;
     animation: moveBannerDown 1s 0.7s forwards;
   }
+
+  .content-wrapper .button{
+    margin-top: 0;
+  }
   
   /* CSS codes for the button present inside content-wrapper */
   .content-wrapper button {
@@ -308,6 +313,7 @@ html {
     animation: moveBannerUp 1s 1.5s forwards;
     overflow: hidden;
     transition: 150ms linear;
+    margin-top: 0;
   }
   
   /* Hover CSS codes for content-wrapper */
@@ -372,6 +378,7 @@ html {
   /* CSS code for social-icons div present inside parallax div */
   .social-icons {
     position: absolute;
+    top: 23.5rem;
     left: 0rem;
     padding: 2.5rem 0.5rem;
     background: rgba(255, 255, 255, 0.1);
@@ -720,6 +727,7 @@ html {
       margin-top: 25rem;
     }
   }
+
   
   /* for-ipad-air*/
   @media(height:1180px){
