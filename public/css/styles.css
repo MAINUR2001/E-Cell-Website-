@@ -1462,246 +1462,364 @@ cursor: pointer;
 
 /* EVENT HIGHLIGHT SECTION CSS MAINUR*/
 
-.event__Container {
-    margin: 2px;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 20% 90% 90%;
-    grid-template-areas: "event__Header event__Header" "left__Box right__Box" "event__Footer event__Footer";
+@font-face {
+    font-family: Axiforma ;
+    src: url(/Axiforma-Regular.ttf);
 }
 
-@media only screen and (max-width: 600px) {
-    .event__Container {
-        margin: 2px 0;
-        /* changed from 2px --> 2px 0 by manash in order to remove the x-overflow of div and appearance of horizontal scroll bar */
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 15% 50% 50%;
-        grid-template-areas: "event__Header" "left__Box " "right__Box" "event__Footer";
+.full__Container{
+    background-color: #f8f8ff
+
+}
+
+.event__Header{
+    background-color: #f8f8ff
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: #01AEBC;
+    font-family: Axiforma;
+}
+img{
+  width: 94%;
+  margin: 3%;
+}
+
+h1{
+    font-family: Axiforma, sans-serif;
+    position: relative;
+    padding-left: 15px;
+
+    font-size: 60px;
+    color: #162431;
+    margin-left: 4rem;
+}
+
+
+h1:after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 7px;
+    background: linear-gradient( 
+        to right,
+        #01AEBC 0%,
+        #01AEBC 50%,
+        
+        #162431 50%,
+        #162431 100%
+
+    );
+    top: 50%;
+    position: absolute;
+    margin-left: 500px;
+
+}
+
+h2{
+    font-family: Axiforma, sans-serif;
+    font-size: 35px;
+    color: #162431;
+    
+}
+p{
+    margin-bottom: 35px;
+    font-family: Axiforma, serif;
+    font-size: 1.4rem;
+    color: #162431;
+}
+
+
+
+.event__Container{
+   
+    
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+
+}
+
+@media (max-width: 1000px){
+    .event__Container{
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    h1{
+        position: relative;
+        margin-top: 10px;
+        padding-left: 0px;
+        padding-top: 10px;
+        font-size: 35px;
+        margin-left: 2rem;
+    }
+    
+    
+    h1:after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 7px;
+        top: 50%;
+        position: absolute;
+        margin-left: 285px;
+    
+    }
+
+    h2{
+        font-size: 30px;
+    }
+    p{
+        margin-bottom: 35px;
+        font-size: 1rem;
     }
 }
 
-.event__Container .event__Header {
-    background-color: white;
-    grid-area: event__Header;
-    position: relative;
-    z-index: 1;
+.left__Event__Container{
+    
+    flex-grow: 1.5;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
 }
 
-.event_badge {
-    position: absolute;
-    top: 100%;
+.right__Event__Container{
+    
+    flex-grow: 1;
+    flex-wrap: wrap;
+    max-width: 40%;
+    
+
+}
+
+@media (max-width: 1000px){
+    .right__Event__Container{
+        flex-grow: 1;
+        flex-wrap: wrap;
+        max-width: 100%;
+    
+    }
+
+    .left__Event__Container{
+    
+        flex-grow: 1;
+        flex-wrap: wrap;
+        min-width: 94%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+        0 6px 20px 0 rgba(0,0,0,0.19);
+        margin-left: 3%;
+        
+    
+    }
+    img{
+        width: 94%;
+        margin: 3%;
+        align-items: center;
+    }
+}
+
+.event__Content{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+    0 6px 20px 0 rgba(0,0,0,0.19);
+    
+
+}
+ 
+.event__Content__1{
+    /* background-color: #fff; */
+    margin: 4%;
+    margin-top: 0;
+    padding-bottom: 1rem;
+    
+
+
+}
+
+.event__Content__2{
+    /* background-color: #fff; */
+    margin: 3%;
+    padding-bottom: 1rem;
+    
+}
+
+.event__Content__3{
+    /* background-color: #fff; */
+    margin: 3%;
+    margin-bottom: 0;
+    
+}
+
+.srijan__Content{
+    margin-left: 3%;
+    margin-right: 1rem;
+}
+
+
+.content__1{
+    margin-left: 15px;
+    margin-right: 1rem;
+    padding-top: 1px;
+    
+   
+}
+.content__2{
+    margin-left: 15px;
+    padding-top: 1px;
+    margin-right: 1rem;
+   
+   
+}
+.content__3{
+    margin-left: 15px;
+    padding-top: 10px;
+    margin-right: 1rem;
+   
+}
+
+@media (max-width: 1000px){
+    .srijan__Content{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+    
+
+/* popup css */
+
+.full__Container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+
+}
+
+
+#SRIJAN{
+    position: fixed;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f7f7f7;
-    height: 22rem;
-    width: 40rem;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-@media only screen and (max-width:600px) {
-    .event_badge {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #f7f7f7;
-        height: 16rem;
-        width: 32rem;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    }
-}
-
-.badge_content h3 {
-    font-size: 4rem;
-    color: #000;
-    margin: 3rem;
-}
-
-@media only screen and (max-width:600px) {
-    .badge_content h3 {
-        font-size: 25px;
-        color: #000;
-    }
-}
-
-.event__Container .left__Box {
-    background-color: rgb(43, 226, 52);
-    grid-area: left__Box;
-}
-
-.event__Container .right__Box {
-    background-color: rgb(74, 154, 201);
-    grid-area: right__Box;
-}
-
-.event__Container .event__Footer {
-    margin-top: 100px;
-    grid-area: event__Footer;
-}
-
-.event__Box {
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.event__Box img {
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
-    transition: transform .5s linear;
-}
-
-.event__Box:hover img {
-    transform: scale(2);
-}
-
-.event__Box .left__Box__Content {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.event__Box .right__Box__Content {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.event__Box .left__Box__Content::before,
-.event__Box .left__Box__Content::after {
-    content: "";
-    width: 94%;
-    height: 47%;
-    background: #000;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: all .5s linear;
+    width: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px #000;
+    background: #fff;
+    visibility: hidden;
     opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
 }
 
-.event__Box .left__Box__Content::before {
-    top: -80%;
-}
-
-.event__Box .left__Box__Content::after {
-    bottom: -80%;
-}
-
-.event__Box:hover .left__Box__Content::before {
-    top: 3%;
-    opacity: .6;
-}
-
-.event__Box:hover .left__Box__Content::after {
-    bottom: 3%;
-    opacity: .6;
-}
-
-.event__Box .right__Box__Content::before,
-.event__Box .right__Box__Content::after {
-    content: "";
-    width: 94%;
-    height: 47%;
-    background: #000;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: all .5s linear;
-    opacity: 0;
-}
-
-.event__Box .right__Box__Content::before {
-    top: -40%;
-}
-
-.event__Box .right__Box__Content::after {
-    bottom: -40%;
-}
-
-.event__Box:hover .right__Box__Content::before {
-    top: 3%;
-    opacity: .6;
-}
-
-.event__Box:hover .right__Box__Content::after {
-    bottom: 3%;
-    opacity: .6;
-}
-
-.Content {
-    text-align: center;
-    position: absolute;
-    top: 100px;
-    bottom: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    z-index: 2;
-}
-
-.event__Box h2 {
-    color: white;
-    padding-bottom: 40px;
-    transition: all .5s linear;
-    transform: scale(1);
-    opacity: 0;
-}
-
-.event__Box:hover h2 {
-    transform: scale(2);
+#SRIJAN.active{
+    top: 50%;
+    visibility: visible;
     opacity: 1;
+    transform: 0.5s;
 }
 
-.event__Box h3 {
-    color: white;
-    padding-bottom: 40px;
-    transition: all .5s linear;
-    transform: scale(3);
+#EMPRESSARIO{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding:50px;
+    box-shadow: 0 5px 30px #000;
+    background: #fff;
+    visibility: hidden;
     opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
 }
 
-.event__Box:hover h3 {
-    transform: scale(1);
+#EMPRESSARIO.active{
+    top: 50%;
+    visibility: visible;
     opacity: 1;
+    transform: 0.5s;
 }
 
-.event__text {
-    padding: 4%;
-    font-size: 2rem;
-    margin-top: -5%;
+#BECHKEDIKHAO{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px #000;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
 }
 
-.event__Title {
-    font-size: large;
+#BECHKEDIKHAO.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
 }
 
-@media only screen and (max-width:600px) {
-    .event__text {
-        padding: 4%;
-        font-size: 1.5rem;
-        margin-top: -8%;
+#TECNOESIS{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px #000;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+
+}
+
+#TECNOESIS.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transform: 0.5s;
+}
+
+
+@media (max-width: 1000px){
+    
+    #SRIJAN{
+        width: 80%;
+        padding: 20px;
+       
+    }
+    
+    #EMPRESSARIO{
+        width: 80%;
+        padding: 20px;
+    }
+    #BECHKEDIKHAO{
+        width: 80%;
+        padding: 20px;
+    }
+    #TECNOESIS{
+        width: 80%;
+        padding: 20px;
     }
 }
+
 
 
 /* EVENT HIGHLIGHT CSS MAINUR*/
