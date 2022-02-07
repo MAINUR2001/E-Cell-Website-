@@ -272,50 +272,49 @@
 
 
     <!--starting of event highlight-->
-
-    <div class="full__Container" id="blur">
+ <div class="full__Container" id="blur">
         <div class="event__Header">
             <h1 class="main__Heading">Event Highlights </h1>
             
         </div>
 
         <div class="event__Container">
-            <div class="left__Event__Container">
-                <img src="./images/EVENT__IMAGE.jpeg" alt="" width="90%">
+            <div class="left__Event__Container" id="blur1">
+                <img class="event__highlight__image" src="./images/EVENT__IMAGE.jpeg" alt="" width="90%">
                 <div class="srijan__Content">
-                    <h2>Srijan2.0_&#60;&#62;</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <h2 class="sub__event__heading">Srijan2.0_&#60;&#62;</h2>
+                    <p class="event__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                          Numquam, aliquid odit consequuntur recusandae
                           eum fugiat quae maxime tenetur non praesentium.</p>
-                          <a href="#" onclick="SRIJAN()">READ MORE   &rarr;</a>
+                          <a class="event__btn" href="#blur1" onclick="SRIJAN()">READ MORE   &rarr;</a>
                 </div>
             </div>
             <div class="right__Event__Container">
-                <div class="event__Content event__Content__1">
+                <div class="event__Content event__Content__1" id="blur2">
                     <div class="content__1">
-                        <h2>Empressario_&#60;&#62;</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <h2 class="sub__event__heading">Empressario_&#60;&#62;</h2>
+                        <p class="event__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                              Numquam, aliquid odit consequuntur recusandae
                               eum fugiat quae maxime tenetur non praesentium.</p>
-                              <a href="#" onclick="EMPRESSARIO()">READ MORE   &rarr;</a>
+                              <a class="event__btn" href="#blur2" onclick="EMPRESSARIO()">READ MORE   &rarr;</a>
                     </div>
                 </div>
-                <div class="event__Content event__Content__2">
+                <div class="event__Content event__Content__2" id="blur3">
                     <div class="content__2">
-                        <h2>Bechkedikhao_&#60;&#62;</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <h2 class="sub__event__heading">Bechkedikhao_&#60;&#62;</h2>
+                        <p class="event__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                              Numquam, aliquid odit consequuntur recusandae
                               eum fugiat quae maxime tenetur non praesentium.</p>
-                              <a href="#" onclick="BECHKEDIKHAO()">READ MORE   &rarr;</a>
+                              <a class="event__btn" href="#blur2" onclick="BECHKEDIKHAO()">READ MORE   &rarr;</a>
                     </div>
                 </div>
-                <div class="event__Content event__Content__3">
+                <div class="event__Content event__Content__3" id="blur4" >
                     <div class="content__3">
-                        <h2>Tecnoesis_&#60;&#62;</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <h2 class="sub__event__heading">Tecnoesis_&#60;&#62;</h2>
+                        <p class="event__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                              Numquam, aliquid odit consequuntur recusandae
                               eum fugiat quae maxime tenetur non praesentium.</p>
-                              <a href="#" onclick="TECNOESIS()">READ MORE   &rarr;</a>
+                              <a class="event__btn" href="#blur3" onclick="TECNOESIS()">READ MORE   &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -323,36 +322,39 @@
     </div>
 
     <div id="SRIJAN">
-        <h2>SRIJAN 2.0</h2>
-        <p>Lorem ipsum, dolor sit amet 
+        <h2 class="sub__event__heading">SRIJAN 2.0</h2>
+        <p class="event__text">Lorem ipsum, dolor sit amet 
             consectetur adipisicing elit. Autem, rem. lorem</p>
-            <a href="#" onclick="SRIJAN()">CLOSE</a>
+            <a class="event__btn" href="#blur1" onclick="SRIJAN()">CLOSE</a>
 
     </div>>
     <div id="EMPRESSARIO">
-        <h2>EMPRESSARIO</h2>
-        <p>Lorem ipsum, dolor sit amet 
+        <h2 class="sub__event__heading">EMPRESSARIO</h2>
+        <p class="event__text">Lorem ipsum, dolor sit amet 
             consectetur adipisicing elit. Autem, rem. Lorem ipsum dolor
              consectetur adipisicing elit. Ducimus, modi! lorem</p>
-            <a href="#" onclick="EMPRESSARIO()">CLOSE</a>
+            <a class="event__btn" href="#blur2" onclick="EMPRESSARIO()">CLOSE</a>
     </div>>
 
     <div id="BECHKEDIKHAO">
-        <h2>BECHKEDIKHAO</h2>
-        <p>Lorem ipsum, dolor sit amet 
+        <h2 class="sub__event__heading">BECHKEDIKHAO</h2>
+        <p class="event__text">Lorem ipsum, dolor sit amet 
             consectetur adipisicing elit. Autem, rem. lorem</p>
-            <a href="#" onclick="BECHKEDIKHAO()">CLOSE</a>
+            <a class="event__btn" href="#blur2" onclick="BECHKEDIKHAO()">CLOSE</a>
 
     </div>>
     <div id="TECNOESIS">
-        <h2>TECNOESIS</h2>
-        <p>Lorem ipsum, dolor sit amet 
+        <h2 class="sub__event__heading">TECNOESIS</h2>
+        <p class="event__text">Lorem ipsum, dolor sit amet 
             consectetur adipisicing elit. Autem, rem. lorem</p>
-            <a href="#" onclick="TECNOESIS()">CLOSE</a>
+            <a class="event__btn" href="#blur43" onclick="TECNOESIS()">CLOSE</a>
     </div>>
 
-
+ 
     <!--ending of event highlight-->
+
+
+
 
     <!-- Our team Start -->
     
@@ -481,13 +483,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-    <script>
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
-    </script>
     <!--Added by Hannan-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
