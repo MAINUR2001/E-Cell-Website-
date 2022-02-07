@@ -708,6 +708,37 @@ html {
       margin-top: 25rem;
     }
   }
+
+  /* for-galaxy-s-20-ultra */
+  @media(max-width:412px),(height:915px){
+    .content-wrapper{
+      margin-top: 25rem;
+    }
+  }
+
+  @media (max-width: 394px) {
+    .content-wrapper{
+      margin-top: 25rem;
+    }
+  }
+
+  @media (max-width: 376px) {
+    .content-wrapper{
+      margin-top: 15rem;
+    }
+  }
+
+  @media (max-width: 361px) {
+    .content-wrapper{
+      margin-top: 20rem;
+    }
+  }
+
+  @media (width: 280px) {
+    .content-wrapper h2 {
+      font-size: 5.2rem;
+    }
+  }
   
   /* for-iphone-XR */
   @media(width:415px),(height:896px){
@@ -721,12 +752,7 @@ html {
       margin-top: 25rem;
     }
   }
-  /* for-galaxy-s-20-ultra */
-  @media(width:412px),(height:915px){
-    .content-wrapper{
-      margin-top: 25rem;
-    }
-  }
+  
 
   
   /* for-ipad-air*/
@@ -736,11 +762,13 @@ html {
     }
   }
   
-  @media (width: 280px) {
-    .content-wrapper h2 {
-      font-size: 5.2rem;
+  /* for-ipad-mini*/
+  @media(height:1024px){
+    .content-wrapper{
+      margin-top: 30rem;
     }
   }
+  
   
   /* HOME PAGE CSS MANASH */
   
@@ -1458,371 +1486,371 @@ cursor: pointer;
 
 
 /* GALLERY SECTION CSS RITURAJ */
-
-
 /* EVENT HIGHLIGHT SECTION CSS MAINUR*/
 
 @font-face {
-    font-family: Axiforma ;
-    src: url(/Axiforma-Regular.ttf);
+  font-family: Axiforma ;
+  src: url(/Axiforma-Regular.ttf);
 }
 
 .full__Container{
-    background-color: #f8f8ff
+  background-color: #f8f8ff
 
 }
 
 .event__Header{
-    background-color: #f8f8ff
-    
+  background-color: #f8f8ff
+  
 
 }
 
 a{
-    text-decoration: none;
-    color: #01AEBC;
-    font-family: Axiforma;
+  text-decoration: none;
+  color: #01AEBC;
+  font-family: Axiforma;
 }
 img{
-  width: 94%;
-  margin: 3%;
+width: 94%;
+margin: 3%;
 }
 
 h1{
-    font-family: Axiforma, sans-serif;
-    position: relative;
-    padding-left: 15px;
+  font-family: Axiforma, sans-serif;
+  position: relative;
+  padding-left: 15px;
 
-    font-size: 60px;
-    color: #162431;
-    margin-left: 4rem;
+  font-size: 60px;
+  color: #162431;
+  margin-left: 4rem;
 }
 
 
 h1:after{
-    content: "";
-    display: block;
-    width: 80px;
-    height: 7px;
-    background: linear-gradient( 
-        to right,
-        #01AEBC 0%,
-        #01AEBC 50%,
-        
-        #162431 50%,
-        #162431 100%
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  background: linear-gradient( 
+      to right,
+      #01AEBC 0%,
+      #01AEBC 50%,
+      
+      #162431 50%,
+      #162431 100%
 
-    );
-    top: 50%;
-    position: absolute;
-    margin-left: 500px;
+  );
+  top: 50%;
+  position: absolute;
+  margin-left: 500px;
 
 }
 
 h2{
-    font-family: Axiforma, sans-serif;
-    font-size: 35px;
-    color: #162431;
-    
+  font-family: Axiforma, sans-serif;
+  font-size: 35px;
+  color: #162431;
+  
 }
 p{
-    margin-bottom: 35px;
-    font-family: Axiforma, serif;
-    font-size: 1.4rem;
-    color: #162431;
+  margin-bottom: 35px;
+  font-family: Axiforma, serif;
+  font-size: 1.4rem;
+  color: #162431;
 }
 
 
 
 .event__Container{
-   
-    
-    display: flex;
-    flex-direction: row;
-    margin: 3rem;
+ 
+  
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
 
 }
 
 @media (max-width: 1000px){
-    .event__Container{
-        flex-direction: column;
-        margin: 1rem;
-    }
+  .event__Container{
+      flex-direction: column;
+      margin: 1rem;
+  }
 
-    h1{
-        position: relative;
-        margin-top: 10px;
-        padding-left: 0px;
-        padding-top: 10px;
-        font-size: 35px;
-        margin-left: 2rem;
-    }
-    
-    
-    h1:after{
-        content: "";
-        display: block;
-        width: 40px;
-        height: 7px;
-        top: 50%;
-        position: absolute;
-        margin-left: 285px;
-    
-    }
+  h1{
+      position: relative;
+      margin-top: 10px;
+      padding-left: 0px;
+      padding-top: 10px;
+      font-size: 35px;
+      margin-left: 2rem;
+  }
+  
+  
+  h1:after{
+      content: "";
+      display: block;
+      width: 40px;
+      height: 7px;
+      top: 50%;
+      position: absolute;
+      margin-left: 285px;
+  
+  }
 
-    h2{
-        font-size: 30px;
-    }
-    p{
-        margin-bottom: 35px;
-        font-size: 1rem;
-    }
+  h2{
+      font-size: 30px;
+  }
+  p{
+      margin-bottom: 35px;
+      font-size: 1rem;
+  }
 }
 
 .left__Event__Container{
-    
-    flex-grow: 1.5;
-    flex-wrap: wrap;
-    width: 70%;
-    margin-top: 0;
-    margin-bottom: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
-    0 6px 20px 0 rgba(0,0,0,0.19);
-    
+  
+  flex-grow: 1.5;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+  0 6px 20px 0 rgba(0,0,0,0.19);
+  
 
 }
 
 .right__Event__Container{
-    
-    flex-grow: 1;
-    flex-wrap: wrap;
-    max-width: 40%;
-    
+  
+  flex-grow: 1;
+  flex-wrap: wrap;
+  max-width: 40%;
+  
 
 }
 
 @media (max-width: 1000px){
-    .right__Event__Container{
-        flex-grow: 1;
-        flex-wrap: wrap;
-        max-width: 100%;
-    
-    }
+  .right__Event__Container{
+      flex-grow: 1;
+      flex-wrap: wrap;
+      max-width: 100%;
+  
+  }
 
-    .left__Event__Container{
-    
-        flex-grow: 1;
-        flex-wrap: wrap;
-        min-width: 94%;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
-        0 6px 20px 0 rgba(0,0,0,0.19);
-        margin-left: 3%;
-        
-    
-    }
-    img{
-        width: 94%;
-        margin: 3%;
-        align-items: center;
-    }
+  .left__Event__Container{
+  
+      flex-grow: 1;
+      flex-wrap: wrap;
+      min-width: 94%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+      0 6px 20px 0 rgba(0,0,0,0.19);
+      margin-left: 3%;
+      
+  
+  }
+  img{
+      width: 94%;
+      margin: 3%;
+      align-items: center;
+  }
 }
 
 .event__Content{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
-    0 6px 20px 0 rgba(0,0,0,0.19);
-    
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+  0 6px 20px 0 rgba(0,0,0,0.19);
+  
 
 }
- 
+
 .event__Content__1{
-    /* background-color: #fff; */
-    margin: 4%;
-    margin-top: 0;
-    padding-bottom: 1rem;
-    
+  /* background-color: #fff; */
+  margin: 4%;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  
 
 
 }
 
 .event__Content__2{
-    /* background-color: #fff; */
-    margin: 3%;
-    padding-bottom: 1rem;
-    
+  /* background-color: #fff; */
+  margin: 3%;
+  padding-bottom: 1rem;
+  
 }
 
 .event__Content__3{
-    /* background-color: #fff; */
-    margin: 3%;
-    margin-bottom: 0;
-    
+  /* background-color: #fff; */
+  margin: 3%;
+  margin-bottom: 0;
+  
 }
 
 .srijan__Content{
-    margin-left: 3%;
-    margin-right: 1rem;
+  margin-left: 3%;
+  margin-right: 1rem;
 }
 
 
 .content__1{
-    margin-left: 15px;
-    margin-right: 1rem;
-    padding-top: 1px;
-    
-   
+  margin-left: 15px;
+  margin-right: 1rem;
+  padding-top: 1px;
+  
+ 
 }
 .content__2{
-    margin-left: 15px;
-    padding-top: 1px;
-    margin-right: 1rem;
-   
-   
+  margin-left: 15px;
+  padding-top: 1px;
+  margin-right: 1rem;
+ 
+ 
 }
 .content__3{
-    margin-left: 15px;
-    padding-top: 10px;
-    margin-right: 1rem;
-   
+  margin-left: 15px;
+  padding-top: 10px;
+  margin-right: 1rem;
+ 
 }
 
 @media (max-width: 1000px){
-    .srijan__Content{
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1rem;
-    }
+  .srijan__Content{
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+  }
 }
 
-    
+  
 
 /* popup css */
 
 .full__Container#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
 
 }
 
 
 #SRIJAN{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    padding: 50px;
-    box-shadow: 0 5px 30px #000;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  padding: 50px;
+  box-shadow: 0 5px 30px #000;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 
 }
 
 #SRIJAN.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transform: 0.5s;
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
 }
 
 #EMPRESSARIO{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    padding:50px;
-    box-shadow: 0 5px 30px #000;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  padding:50px;
+  box-shadow: 0 5px 30px #000;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 
 }
 
 #EMPRESSARIO.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transform: 0.5s;
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
 }
 
 #BECHKEDIKHAO{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    padding: 50px;
-    box-shadow: 0 5px 30px #000;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  padding: 50px;
+  box-shadow: 0 5px 30px #000;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 
 }
 
 #BECHKEDIKHAO.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transform: 0.5s;
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
 }
 
 #TECNOESIS{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    padding: 50px;
-    box-shadow: 0 5px 30px #000;
-    background: #fff;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 10px;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  padding: 50px;
+  box-shadow: 0 5px 30px #000;
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  border-radius: 10px;
 
 }
 
 #TECNOESIS.active{
-    top: 50%;
-    visibility: visible;
-    opacity: 1;
-    transform: 0.5s;
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
 }
 
 
 @media (max-width: 1000px){
-    
-    #SRIJAN{
-        width: 80%;
-        padding: 20px;
-       
-    }
-    
-    #EMPRESSARIO{
-        width: 80%;
-        padding: 20px;
-    }
-    #BECHKEDIKHAO{
-        width: 80%;
-        padding: 20px;
-    }
-    #TECNOESIS{
-        width: 80%;
-        padding: 20px;
-    }
+  
+  #SRIJAN{
+      width: 80%;
+      padding: 20px;
+     
+  }
+  
+  #EMPRESSARIO{
+      width: 80%;
+      padding: 20px;
+  }
+  #BECHKEDIKHAO{
+      width: 80%;
+      padding: 20px;
+  }
+  #TECNOESIS{
+      width: 80%;
+      padding: 20px;
+  }
 }
 
 
 
 /* EVENT HIGHLIGHT CSS MAINUR*/
+
+
 /* Our team css starts */
 .img-wrapper {
     width: 100%;
